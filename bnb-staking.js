@@ -4,10 +4,22 @@ const {cutil} = require("@ghasemkiani/commonbase/cutil");
 const {Contract: ContractBsc} = require("@ghasemkiani/binance-smart-chain/contract");
 
 class BnbStaking extends ContractBsc {
+	async toGetUserInfo() {
+		let address = this.account.address;
+		let userInfo = await this.contract.methods.userInfo(address).call();
+		return userInfo;
+	}
 	async toDeposit(amount = 0) {
-		let value = amount;
+		let value = this.util.toWei(amount);
 		await this.toGetAbi();
 		let data = this.contract.methods.deposit().encodeABI();
+		return await this.toSendData(data, value);
+	}
+	async toWithdraw(amount = 0) {
+		amount = this.util.toWei(amount);
+		let value = 0;
+		await this.toGetAbi();
+		let data = this.contract.methods.withdraw(amount).encodeABI();
 		return await this.toSendData(data, value);
 	}
 }
