@@ -1,6 +1,6 @@
 //	@ghasemkiani/binance-smart-chain/bnb-staking
 
-const {cutil} = require("@ghasemkiani/commonbase/cutil");
+const {cutil} = require("@ghasemkiani/base/cutil");
 const {Contract: ContractBsc} = require("@ghasemkiani/binance-smart-chain/contract");
 
 class BnbStaking extends ContractBsc {

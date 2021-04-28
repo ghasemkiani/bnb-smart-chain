@@ -1,6 +1,6 @@
 //	@ghasemkiani/binance-smart-chain/iwToken
 
-const {cutil} = require("@ghasemkiani/commonbase/cutil");
+const {cutil} = require("@ghasemkiani/base/cutil");
 const {iwToken: iwTokenEth} = require("@ghasemkiani/ethereum/iwToken");
 const {Token} = require("@ghasemkiani/binance-smart-chain/token");
 
