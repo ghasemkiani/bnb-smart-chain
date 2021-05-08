@@ -1,6 +1,6 @@
 {
   "name": "@ghasemkiani/binance-smart-chain",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "Binance Smart Chain utility",
   "main": "index.js",
   "scripts": {
