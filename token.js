@@ -1,9 +1,9 @@
 //	@ghasemkiani/binance-smart-chain/token
 
-const {cutil} = require("@ghasemkiani/base/cutil");
-const {Contract} = require("@ghasemkiani/binance-smart-chain/contract");
-const {itoken} = require("@ghasemkiani/ethereum/itoken");
+import {cutil} from "@ghasemkiani/base";
+import {itoken} from "@ghasemkiani/ethereum";
+import {Contract} from "./contract.js";
 
 class Token extends cutil.mixin(Contract, itoken) {}
 
-module.exports = {Token};
+export {Token};

@@ -1,11 +1,9 @@
 //	@ghasemkiani/binance-smart-chain/util
 
-const {cutil} = require("@ghasemkiani/base/cutil");
-const {Obj: Base} = require("@ghasemkiani/base/obj");
-const {Util: EthUtil} = require("@ghasemkiani/ethereum/util");
+import {cutil} from "@ghasemkiani/base";
+import {Util as EthUtil} from "@ghasemkiani/ethereum";
 
-class Util extends EthUtil {
-}
+class Util extends EthUtil {}
 cutil.extend(Util.prototype, {
 	tok: "BNB",
 	DEFAULT_URL: "https://bsc-dataseed1.binance.org:443",
@@ -389,6 +387,15 @@ cutil.extend(Util.prototype, {
 		"ONE": "0x03fF0ff224f904be3118461335064bB48Df47938",
 		"TITAN": "0xe898EDc43920F357A93083F1d4460437dE6dAeC2",
 		"CHESS": "0x20de22029ab63cf9A7Cf5fEB2b737Ca1eE4c82A6",
+		"PMON": "0x1796ae0b0fa4862485106a0de9b654eFE301D0b2",
+		"AXS": "0x715D400F88C167884bbCc41C5FeA407ed4D2f8A0",
+		"c98": "0xaEC945e04baF28b135Fa7c640f624f8D90F1C3a6",
+		"SPS": "0x1633b7157e7638C4d6593436111Bf125Ee74703F",
+		"IF": "0xB0e1fc65C1a741b4662B813eB787d369b8614Af1",
+		"WIN": "0xaeF0d72a118ce24feE3cD1d43d383897D05B4e99",
+		"SKILL": "0x154A9F9cbd3449AD22FDaE23044319D6eF2a1Fab",
+		"REVV": "0x833F307aC507D47309fD8CDD1F835BeF8D702a93",
+		"POTS": "0x3Fcca8648651E5b974DD6d3e50F61567779772A8",
 	},
 	tokenDecimals: {
 		"BTCB": 18,
@@ -412,9 +419,11 @@ cutil.extend(Util.prototype, {
 		"0x5A3010d4d8D3B5fB49f8B6E57FB9E48063f16700": "0xa6200fb19Ff7eb4166B0Ebd1cfc3469eE35E9626",
 		"0x03fF0ff224f904be3118461335064bB48Df47938": "0xBA5Fe23f8a3a24BEd3236F05F2FcF35fd0BF0B5C", // ?+
 		"0x2eD9a5C8C13b93955103B9a7C167B67Ef4d568a3": "0x066804d9123bF2609Ed4A4a40b1177a9c5a9Ed51",
+		"0x715D400F88C167884bbCc41C5FeA407ed4D2f8A0": "0xBA5Fe23f8a3a24BEd3236F05F2FcF35fd0BF0B5C",
+		"0x9Fdc3ae5c814b79dcA2556564047C5e7e5449C19": "0xA126c73d1bDf3a3D5F719A8D38a4692186e7503F",
 	},
 });
 
 const util = new Util();
 
-module.exports = {Util, util};
+export {Util, util};

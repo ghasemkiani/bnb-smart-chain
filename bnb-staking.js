@@ -1,7 +1,7 @@
 //	@ghasemkiani/binance-smart-chain/bnb-staking
 
-const {cutil} = require("@ghasemkiani/base/cutil");
-const {Contract: ContractBsc} = require("@ghasemkiani/binance-smart-chain/contract");
+import {cutil} from "@ghasemkiani/base";
+import {Contract as ContractBsc} from "./contract.js";
 
 class BnbStaking extends ContractBsc {
 	async toGetUserInfo() {
@@ -27,4 +27,4 @@ cutil.extend(BnbStaking.prototype, {
 	address: "0x555Ea72d7347E82C614C16f005fA91cAf06DCB5a",
 });
 
-module.exports = {BnbStaking};
+export {BnbStaking};

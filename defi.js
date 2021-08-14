@@ -1,10 +1,10 @@
 //	@ghasemkiani/binance-smart-chain/defi
 
-const {cutil} = require("@ghasemkiani/base/cutil");
-const {util: utilBsc} = require("@ghasemkiani/binance-smart-chain/util");
-const {DeFi: DeFiEth} = require("@ghasemkiani/ethereum/defi");
-const {Client} = require("@ghasemkiani/bscscan-api/client");
-const {iwToken: iwTokenBsc} = require("@ghasemkiani/binance-smart-chain/iwToken");
+import {cutil} from "@ghasemkiani/base";
+import {DeFi as DeFiEth} from "@ghasemkiani/ethereum";
+import {Client} from "@ghasemkiani/bscscan-api";
+import {util as utilBsc} from "./util.js";
+import {iwToken as iwTokenBsc} from "./iwToken.js";
 
 class DeFi extends cutil.mixin(DeFiEth, iwTokenBsc) {
 }
@@ -13,4 +13,4 @@ cutil.extend(DeFi.prototype, {
 	defScan: Client,
 });
 
-module.exports = {DeFi};
+export {DeFi};

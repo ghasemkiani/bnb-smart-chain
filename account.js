@@ -1,10 +1,9 @@
 //	@ghasemkiani/binance-smart-chain/account
 
-const {cutil} = require("@ghasemkiani/base/cutil");
-const {Obj: Base} = require("@ghasemkiani/base/obj");
-const {util: utilBsc} = require("@ghasemkiani/binance-smart-chain/util");
-const {Account: AccountEth} = require("@ghasemkiani/ethereum/account");
-const {Client} = require("@ghasemkiani/bscscan-api/client");
+import {cutil} from "@ghasemkiani/base";
+import {Account as AccountEth} from "@ghasemkiani/ethereum";
+import {Client} from "@ghasemkiani/bscscan-api";
+import {util as utilBsc} from "./util.js";
 
 class Account extends AccountEth {
 	async toTransferToBinanceChain({toAddress, asset, amount}) {
@@ -16,4 +15,4 @@ cutil.extend(Account.prototype, {
 	defScan: Client,
 });
 
-module.exports = {Account};
+export {Account};

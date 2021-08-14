@@ -1,8 +1,8 @@
 //	@ghasemkiani/binance-smart-chain/token-hub
 
-const {cutil} = require("@ghasemkiani/base/cutil");
-const {util: utilBsc} = require("@ghasemkiani/binance-smart-chain/util");
-const {Contract} = require("@ghasemkiani/binance-smart-chain/contract");
+import {cutil} from "@ghasemkiani/base";
+import {util as utilBsc} from "./util.js";
+import {Contract} from "./contract.js";
 
 class TokenHub extends Contract {
 	async toGetBoundBep2Symbol(contractAddr) {
@@ -22,4 +22,4 @@ cutil.extend(TokenHub.prototype, {
 	address: utilBsc.contracts.TOKEN_HUB_ADDR,
 });
 
-module.exports = {TokenHub};
+export {TokenHub};

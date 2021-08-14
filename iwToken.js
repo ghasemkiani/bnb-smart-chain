@@ -1,11 +1,11 @@
 //	@ghasemkiani/binance-smart-chain/iwToken
 
-const {cutil} = require("@ghasemkiani/base/cutil");
-const {iwToken: iwTokenEth} = require("@ghasemkiani/ethereum/iwToken");
-const {Token} = require("@ghasemkiani/binance-smart-chain/token");
+import {cutil} from "@ghasemkiani/base";
+import {iwToken as iwTokenEth} from "@ghasemkiani/ethereum";
+import {Token} from "./token.js";
 
 const iwToken = cutil.extend({}, iwTokenEth, {
 	Token,
 });
 
-module.exports = {iwToken};
+export {iwToken};
