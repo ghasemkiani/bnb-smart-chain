@@ -1,4 +1,4 @@
-//	@ghasemkiani/binance-smart-chain/iwToken
+//	@ghasemkiani/bnb-smart-chain/iwToken
 
 import {cutil} from "@ghasemkiani/base";
 import {iwToken as iwTokenEth} from "@ghasemkiani/ethereum";

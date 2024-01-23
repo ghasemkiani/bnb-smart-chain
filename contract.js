@@ -1,4 +1,4 @@
-//	@ghasemkiani/binance-smart-chain/contract
+//	@ghasemkiani/bnb-smart-chain/contract
 
 import {cutil} from "@ghasemkiani/base";
 import {icontract} from "@ghasemkiani/ethereum";

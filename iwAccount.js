@@ -1,4 +1,4 @@
-//	@ghasemkiani/binance-smart-chain/iwAccount
+//	@ghasemkiani/bnb-smart-chain/iwAccount
 
 import {cutil} from "@ghasemkiani/base";
 import {iwAccount as iwAccountEth} from "@ghasemkiani/ethereum";

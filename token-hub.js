@@ -1,4 +1,4 @@
-//	@ghasemkiani/binance-smart-chain/token-hub
+//	@ghasemkiani/bnb-smart-chain/token-hub
 
 import {cutil} from "@ghasemkiani/base";
 import {util as utilBsc} from "./util.js";

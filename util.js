@@ -1,4 +1,4 @@
-//	@ghasemkiani/binance-smart-chain/util
+//	@ghasemkiani/bnb-smart-chain/util
 
 import {cutil} from "@ghasemkiani/base";
 import {Util as EthUtil} from "@ghasemkiani/ethereum";

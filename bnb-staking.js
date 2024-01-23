@@ -1,4 +1,4 @@
-//	@ghasemkiani/binance-smart-chain/bnb-staking
+//	@ghasemkiani/bnb-smart-chain/bnb-staking
 
 import {cutil} from "@ghasemkiani/base";
 import {Contract as ContractBsc} from "./contract.js";

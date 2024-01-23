@@ -1,4 +1,4 @@
-//	@ghasemkiani/binance-smart-chain/defi
+//	@ghasemkiani/bnb-smart-chain/defi
 
 import {cutil} from "@ghasemkiani/base";
 import {DeFi as DeFiEth} from "@ghasemkiani/ethereum";

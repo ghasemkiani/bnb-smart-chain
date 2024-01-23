@@ -1,6 +1,6 @@
 {
-	"name": "@ghasemkiani/binance-smart-chain",
-	"version": "2.2.0",
+	"name": "@ghasemkiani/bnb-smart-chain",
+	"version": "2.3.0",
 	"description": "Binance Smart Chain utility",
 	"type": "module",
 	"main": "index.js",
@@ -9,7 +9,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://gitlab.com/ghasemkiani/binance-smart-chain.git"
+		"url": "git+https://gitlab.com/ghasemkiani/bnb-smart-chain.git"
 	},
 	"keywords": [
 		"javascript",
@@ -21,9 +21,9 @@
 	"author": "Ghasem Kiani",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://gitlab.com/ghasemkiani/binance-smart-chain/issues"
+		"url": "https://gitlab.com/ghasemkiani/bnb-smart-chain/issues"
 	},
-	"homepage": "https://gitlab.com/ghasemkiani/binance-smart-chain#readme",
+	"homepage": "https://gitlab.com/ghasemkiani/bnb-smart-chain#readme",
 	"dependencies": {
 		"@ghasemkiani/base": "github:ghasemkiani/base",
 		"@ghasemkiani/bscscan-api": "github:ghasemkiani/bscscan-api",

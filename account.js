@@ -1,4 +1,4 @@
-//	@ghasemkiani/binance-smart-chain/account
+//	@ghasemkiani/bnb-smart-chain/account
 
 import {cutil} from "@ghasemkiani/base";
 import {Account as AccountEth} from "@ghasemkiani/ethereum";

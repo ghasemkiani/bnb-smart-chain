@@ -1,4 +1,4 @@
-//	@ghasemkiani/binance-smart-chain/token
+//	@ghasemkiani/bnb-smart-chain/token
 
 import {cutil} from "@ghasemkiani/base";
 import {itoken} from "@ghasemkiani/ethereum";
